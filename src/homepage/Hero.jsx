@@ -21,7 +21,7 @@ const Hero = () => {
           textTitle="Stremvibe is the best streaming experience for watching your favourite moviesand shows on demand, anytime."
           textAlign="text-center"
         />
-        <MyBtn>
+        <MyBtn classname="m-auto">
           <FaPlay className="inline mr-2" />
           Start Watching Now
         </MyBtn>
