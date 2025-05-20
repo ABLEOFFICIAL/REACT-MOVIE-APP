@@ -10,7 +10,7 @@ const Hero = () => {
   return (
     <div
       style={{ backgroundImage: `url(${HeroBg})` }}
-      className="h-screen bg-cover bg-center px-5"
+      className="h-screen bg-no-repeat bg-cover bg-center px-5"
     >
       <div className="bg-gradient-to-b from-[#0f0f0f]/0 to-[#0f0f0f]/100 h-[50vh] w-full absolute bottom-0 left-0 z-0"></div>
       <div className="relative z-10 ">
