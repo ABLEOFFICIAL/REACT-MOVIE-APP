@@ -25,10 +25,10 @@ const Page = () => {
             <span className="text-2xl text-white font-bold">$9.99</span> /month
           </p>
           <div className="flex items-center py-6 w-full justify-between">
-            <MyButton classname="bg-neutral-950 border-2 border-neutral-800 py-5 px-8">
+            <MyButton classname="bg-neutral-950 border-2 border-neutral-800 py-4 px-6">
               Start Free Trial
             </MyButton>
-            <MyButton classname="bg-red-600 py-5 px-8">Choose Plan</MyButton>
+            <MyButton classname="bg-red-600 py-4 px-6">Choose Plan</MyButton>
           </div>
         </Card>
         <Card className="bg-neutral-900 my-6 p-4">
@@ -40,10 +40,10 @@ const Page = () => {
             <span className="text-2xl text-white font-bold">$12.99</span> /month
           </p>
           <div className="flex items-center py-6 w-full justify-between">
-            <MyButton classname="bg-neutral-950 border-2 border-neutral-800 py-5 px-8">
+            <MyButton classname="bg-neutral-950 border-2 border-neutral-800 py-4 px-6">
               Start Free Trial
             </MyButton>
-            <MyButton classname="bg-red-600 py-5 px-8">Choose Plan</MyButton>
+            <MyButton classname="bg-red-600 py-4 px-6">Choose Plan</MyButton>
           </div>
         </Card>
         <Card className="bg-neutral-900 my-6 p-4">
@@ -55,10 +55,10 @@ const Page = () => {
             <span className="text-2xl text-white font-bold">$14.99</span> /month
           </p>
           <div className="flex items-center py-6 w-full justify-between">
-            <MyButton classname="bg-neutral-950 border-2 border-neutral-800 py-5 px-8">
+            <MyButton classname="bg-neutral-950 border-2 border-neutral-800 py-4 px-6">
               Start Free Trial
             </MyButton>
-            <MyButton classname="bg-red-600 py-5 px-8">Choose Plan</MyButton>
+            <MyButton classname="bg-red-600 py-4 px-6">Choose Plan</MyButton>
           </div>
         </Card>
         <Card className="bg-[url(/bg-banner-cd590097.png)] h-80 bg-cover">

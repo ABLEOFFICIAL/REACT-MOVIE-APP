@@ -51,7 +51,7 @@ const Questions = () => {
                     <span className="px-3 py-2.5 bg-neutral-800 rounded-lg mr-2">
                       0{index + 1}
                     </span>
-                    <h2 className="text-xl font-light">{q.question}</h2>
+                    <h2 className="text-lg font-light">{q.question}</h2>
                   </div>
                   {q.show ? (
                     <FaMinus

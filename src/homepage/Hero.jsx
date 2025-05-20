@@ -10,7 +10,7 @@ const Hero = () => {
   return (
     <div
       style={{ backgroundImage: `url(${HeroBg})` }}
-      className="h-screen bg-cover bg-center"
+      className="h-screen bg-cover bg-center px-5"
     >
       <div className="bg-gradient-to-b from-[#0f0f0f]/0 to-[#0f0f0f]/100 h-[50vh] w-full absolute bottom-0 left-0 z-0"></div>
       <div className="relative z-10 ">
@@ -21,7 +21,7 @@ const Hero = () => {
           textTitle="Stremvibe is the best streaming experience for watching your favourite moviesand shows on demand, anytime."
           textAlign="text-center"
         />
-        <MyButton classname="m-auto bg-red-600 px-5 py-3 w-60">
+        <MyButton classname="m-auto bg-red-600 my-3 px-5 py-3 w-52">
           <FaPlay className="inline mr-2" />
           Start Watching Now
         </MyButton>
