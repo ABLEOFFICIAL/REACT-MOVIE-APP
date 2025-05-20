@@ -2,7 +2,7 @@ import React from "react";
 import NavBar from "../global/NavBar";
 import HeroBg from "../images/hero-720b4fae.png";
 import Text from "../global/Text";
-import MyBtn from "../global/myBtn";
+import MyButton from "../global/MyButton";
 import { FaPlay } from "react-icons/fa6";
 import EmptyDiv from "../global/EmptyDiv";
 
@@ -21,10 +21,10 @@ const Hero = () => {
           textTitle="Stremvibe is the best streaming experience for watching your favourite moviesand shows on demand, anytime."
           textAlign="text-center"
         />
-        <MyBtn classname="m-auto">
+        <MyButton classname="m-auto bg-red-600 px-5 py-3 w-60">
           <FaPlay className="inline mr-2" />
           Start Watching Now
-        </MyBtn>
+        </MyButton>
       </div>
     </div>
   );

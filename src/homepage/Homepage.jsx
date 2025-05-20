@@ -3,6 +3,8 @@ import Hero from "./Hero";
 import Explore from "./Explore";
 import Experiences from "./Experiences";
 import Questions from "./Questions";
+import Page from "./Page";
+import Footer from "../global/Footer";
 
 const HomePage = () => {
   const [category, setCategory] = useState();
@@ -32,6 +34,8 @@ const HomePage = () => {
       )}
       <Experiences />
       <Questions />
+      <Page />
+      <Footer />
     </div>
   );
 };

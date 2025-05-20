@@ -18,47 +18,65 @@ const Experiences = () => {
         />
       </div>
       <div className="flex flex-col gap-6">
-        <Card className="bg-linear-to-tr from-neutral-950/100 via-neutral-950 to-red-900/55">
+        <Card className="bg-linear-to-tr from-neutral-950/100 via-neutral-950 to-red-900/55 p-7">
           <div className="flex gap-4">
             <RiSmartphoneFill className="inline size-15 px-2 py3 text-red-600 bg-neutral-800 border-2  border-neutral-700 rounded-lg" />
             <Text title="Smartphones" />
           </div>
-          <Text textTitle="StreamVibe is optimized for both Android and iOS smartphones. Download our app from the Google Play Store or the Apple App Store" />
+          <p>
+            StreamVibe is optimized for both Android and iOS smartphones.
+            Download our app from the Google Play Store or the Apple App Store
+          </p>
         </Card>
-        <Card className="bg-linear-to-tr from-neutral-950/100 via-neutral-950 to-red-900/55">
+        <Card className="bg-linear-to-tr from-neutral-950/100 via-neutral-950 to-red-900/55 p-7">
           <div className="flex gap-4">
             <FaTablet className="inline size-15 px-2 py3 text-red-600 bg-neutral-800 border-2  border-neutral-700 rounded-lg" />
             <Text title="Tablet" />
           </div>
-          <Text textTitle="StreamVibe is optimized for both Android and iOS smartphones. Download our app from the Google Play Store or the Apple App Store" />
+          <p>
+            StreamVibe is optimized for both Android and iOS smartphones.
+            Download our app from the Google Play Store or the Apple App Store
+          </p>
         </Card>
-        <Card className="bg-linear-to-tr from-neutral-950/100 via-neutral-950 to-red-900/55">
+        <Card className="bg-linear-to-tr from-neutral-950/100 via-neutral-950 to-red-900/55 p-7">
           <div className="flex gap-4">
             <FaTv className="inline size-15 px-2 py3 text-red-600 bg-neutral-800 border-2  border-neutral-700 rounded-lg" />
             <Text title="Smart TV" />
           </div>
-          <Text textTitle="StreamVibe is optimized for both Android and iOS smartphones. Download our app from the Google Play Store or the Apple App Store" />
+          <p>
+            StreamVibe is optimized for both Android and iOS smartphones.
+            Download our app from the Google Play Store or the Apple App Store
+          </p>
         </Card>
-        <Card className="bg-linear-to-tr from-neutral-950/100 via-neutral-950 to-red-900/55">
+        <Card className="bg-linear-to-tr from-neutral-950/100 via-neutral-950 to-red-900/55 p-7">
           <div className="flex gap-4">
             <BsFillLaptopFill className="inline size-15 px-2 py3 text-red-600 bg-neutral-800 border-2  border-neutral-700 rounded-lg" />
             <Text title="Laptops" />
           </div>
-          <Text textTitle="StreamVibe is optimized for both Android and iOS smartphones. Download our app from the Google Play Store or the Apple App Store" />
+          <p>
+            StreamVibe is optimized for both Android and iOS smartphones.
+            Download our app from the Google Play Store or the Apple App Store
+          </p>
         </Card>
-        <Card className="bg-linear-to-tr from-neutral-950/100 via-neutral-950 to-red-900/55">
+        <Card className="bg-linear-to-tr from-neutral-950/100 via-neutral-950 to-red-900/55 p-7">
           <div className="flex gap-4">
             <FaGamepad className="inline size-15 px-2 py3 text-red-600 bg-neutral-800 border-2  border-neutral-700 rounded-lg" />
             <Text title="Gaming Consoles" />
           </div>
-          <Text textTitle="StreamVibe is optimized for both Android and iOS smartphones. Download our app from the Google Play Store or the Apple App Store" />
+          <p>
+            StreamVibe is optimized for both Android and iOS smartphones.
+            Download our app from the Google Play Store or the Apple App Store
+          </p>
         </Card>
-        <Card className="bg-linear-to-tr from-neutral-950/100 via-neutral-950 to-red-900/55">
+        <Card className="bg-linear-to-tr from-neutral-950/100 via-neutral-950 to-red-900/55 p-7">
           <div className="flex gap-4">
             <BsHeadsetVr className="inline size-15 px-2 py3 text-red-600 bg-neutral-800 border-2  border-neutral-700 rounded-lg" />
             <Text title="VR Headsets" />
           </div>
-          <Text textTitle="StreamVibe is optimized for both Android and iOS smartphones. Download our app from the Google Play Store or the Apple App Store" />
+          <p>
+            StreamVibe is optimized for both Android and iOS smartphones.
+            Download our app from the Google Play Store or the Apple App Store
+          </p>
         </Card>
       </div>
     </div>

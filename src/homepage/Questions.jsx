@@ -1,18 +1,79 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import Text from "../global/Text";
-import MyBtn from "../global/myBtn";
+import MyButton from "../global/MyButton";
+import { FaPlus } from "react-icons/fa6";
+import { FaMinus } from "react-icons/fa6";
 
 const Questions = () => {
+  const [questions, setQuestions] = useState([]);
+  //   const [show, setShow] = useState(false);
+
+  useEffect(() => {
+    fetch("/question.json")
+      .then((res) => res.json())
+      .then((data) => {
+        console.log(data);
+
+        const updated = data.map((d) => ({ ...d, show: false }));
+        setQuestions(updated);
+        console.log(updated);
+      });
+  }, []);
+
+  function showHideAnswer(id) {
+    console.log("hellllo");
+
+    const clicked = questions.map((question) =>
+      question.id === id ? { ...question, show: !question.show } : question
+    );
+    console.log(clicked);
+
+    setQuestions(clicked);
+  }
+
   return (
-    <div>
-      <div className="px-5 py-10">
+    <div className="px-5 py-10">
+      <div>
         <Text
           title="Frequently Asked Question"
           textTitle="Got questions? We've got answers! Check out our FAQ section to find answers to the most common questions about StreamVibe."
         />
-        <MyBtn children="Ask a Question" />
+        <MyButton children="Ask a Question" classname="bg-red-600 px-5 py-3" />
       </div>
-      <div></div>
+      <div className="py-10">
+        {questions &&
+          questions.map((q, index) => (
+            <div key={q.id} className="relative">
+              <div className="w-screen h-0.5 absolute bottom-0 left-0 bg-linear-to-r from-neutral-950 via-red-600 to-neutral-950"></div>
+              <div className="py-5">
+                <div className="flex justify-between items-center">
+                  <div className="flex items-center py-4">
+                    <span className="px-3 py-2.5 bg-neutral-800 rounded-lg mr-2">
+                      0{index + 1}
+                    </span>
+                    <h2 className="text-xl font-light">{q.question}</h2>
+                  </div>
+                  {q.show ? (
+                    <FaMinus
+                      onClick={() => showHideAnswer(q.id)}
+                      className="text-white size-5"
+                    />
+                  ) : (
+                    <FaPlus
+                      onClick={() => showHideAnswer(q.id)}
+                      className="text-white size-5"
+                    />
+                  )}
+                </div>
+                {q.show && (
+                  <p className="text-base font-extralight text-neutral-400">
+                    {q.answer}
+                  </p>
+                )}
+              </div>
+            </div>
+          ))}
+      </div>
     </div>
   );
 };

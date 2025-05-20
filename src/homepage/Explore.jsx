@@ -65,7 +65,7 @@ const Explore = ({ category, categoryImg }) => {
         <div className="flex gap-4 w-max">
           {genres.map((genre) =>
             genre.image ? (
-              <Card key={genre.id} className="w-[70vw] bg-[#181818]">
+              <Card key={genre.id} className="w-[70vw] bg-[#181818] p-4">
                 <img
                   className="h-48 w-full object-cover rounded-lg mb-3"
                   src={`https://image.tmdb.org/t/p/w500${genre.image}`}
