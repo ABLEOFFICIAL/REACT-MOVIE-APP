@@ -5,8 +5,8 @@ import { FaLinkedin } from "react-icons/fa";
 
 const Footer = () => {
   return (
-    <div className=" p-5  bg-black">
-      <div className="flex flex-wrap pb-10">
+    <div className=" p-5 md:px-28 bg-black">
+      <div className="flex flex-wrap pb-10 md:justify-between md:items-start">
         <div className="w-40">
           <a href="#">
             <h3 className="py-4 font-base text-lg">Home</h3>
@@ -114,18 +114,18 @@ const Footer = () => {
         </div>
       </div>
       <hr className="w-full text-neutral-700" />
-      <div className="py-5">
+      <div className="py-5 md:flex justify-between">
         <p className="py-3">@2023 streamvib, All Rights Reserved</p>
-        <div className="flex justify-between">
+        <div className="flex justify-between md:w-[25vw] md:items-center">
           <a
             href="#"
-            className="text-neutral-400 font-light text-sm border-r-2 border-r-neutral-700 pr-3"
+            className="text-neutral-400 font-light text-sm border-r-2  border-r-neutral-700 pr-3 md:pr-6"
           >
             Terms of Use
           </a>
           <a
             href="#"
-            className="text-neutral-400 font-light text-sm border-r-2 border-r-neutral-700 pr-3"
+            className="text-neutral-400 font-light text-sm border-r-2  border-r-neutral-700 pr-3 md:pr-6"
           >
             Privacy Policy
           </a>

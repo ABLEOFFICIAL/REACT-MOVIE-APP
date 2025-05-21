@@ -50,11 +50,12 @@ const Explore = ({ category, categoryImg }) => {
   }, []);
 
   return (
-    <div className="px-5 pb-5 h-[70vh] flex flex-col justify-between items-center">
+    <div className="px-5 md:px-28 pb-5 h-[70vh] flex flex-col justify-between items-center md:items-start">
       <Text
         title="Explore our wide variety of categories"
         textTitle="Whether you're looking for a comedy to make you laugh, a drama to make you think, or a documentary to learn something new"
         textAlign="text-start"
+        bgTextTitle="Whether you're looking for a comedy to make you laugh, a drama to make you think, or a documentary to learn something new"
       />
 
       {/* Scrollable cards container */}
@@ -65,7 +66,7 @@ const Explore = ({ category, categoryImg }) => {
         <div className="flex gap-4 w-max">
           {genres.map((genre) =>
             genre.image ? (
-              <Card key={genre.id} className="w-[70vw] bg-[#181818] p-4">
+              <Card key={genre.id} className="w-64 bg-[#181818] p-4">
                 <img
                   className="h-48 w-full object-cover rounded-lg mb-3"
                   src={`https://image.tmdb.org/t/p/w500${genre.image}`}
@@ -79,7 +80,7 @@ const Explore = ({ category, categoryImg }) => {
       </div>
 
       {/* Custom scroll progress bar */}
-      <div className="w-28 h-2.5 bg-neutral-600 rounded-full relative mt-3">
+      <div className="w-28 h-2.5 bg-neutral-600 rounded-full relative mt-3 md:hidden">
         <div
           className="h-2.5 bg-red-600 rounded-full absolute top-0 left-0 transition-all duration-200"
           style={{ width: `${scrollPercent}%` }}

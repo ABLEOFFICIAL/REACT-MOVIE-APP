@@ -10,15 +10,17 @@ import { BsHeadsetVr } from "react-icons/bs";
 
 const Experiences = () => {
   return (
-    <div className="px-5 py-2">
+    <div className="px-5 md:px-28 py-2 md:py-32">
       <div>
         <Text
           title="We provide you Streaming experiences across various devices"
           textTitle="With StreamVibe, you can enjoy your favorite movies and TV shows anytime, anywhere."
+          bgTextTitle="With StreamVibe, you can enjoy your favorite movies and TV shows anytime, anywhere. Our platform is designed to be compatible with a wide range of devices, ensuring that you never miss a moment of entertainment."
+          classname="w-[80%]"
         />
       </div>
-      <div className="flex flex-col gap-6">
-        <Card className="bg-linear-to-tr from-neutral-950/100 via-neutral-950 to-red-900/55 p-7">
+      <div className="flex flex-col gap-6 md:grid md:grid-cols-3 md:mt-10">
+        <Card className="bg-linear-to-tr from-neutral-950/100 via-neutral-950 to-red-900/15 px-5 py-7 md:px-10 md:py-15">
           <div className="flex gap-4">
             <RiSmartphoneFill className="inline size-15 px-2 py3 text-red-600 bg-neutral-800 border-2  border-neutral-700 rounded-lg" />
             <Text title="Smartphones" />
@@ -28,7 +30,7 @@ const Experiences = () => {
             Download our app from the Google Play Store or the Apple App Store
           </p>
         </Card>
-        <Card className="bg-linear-to-tr from-neutral-950/100 via-neutral-950 to-red-900/55 p-7">
+        <Card className="bg-linear-to-tr from-neutral-950/100 via-neutral-950 to-red-900/15 px-5 py-7 md:px-10 md:py-15">
           <div className="flex gap-4">
             <FaTablet className="inline size-15 px-2 py3 text-red-600 bg-neutral-800 border-2  border-neutral-700 rounded-lg" />
             <Text title="Tablet" />
@@ -38,7 +40,7 @@ const Experiences = () => {
             Download our app from the Google Play Store or the Apple App Store
           </p>
         </Card>
-        <Card className="bg-linear-to-tr from-neutral-950/100 via-neutral-950 to-red-900/55 p-7">
+        <Card className="bg-linear-to-tr from-neutral-950/100 via-neutral-950 to-red-900/15 px-5 py-7 md:px-10 md:py-15">
           <div className="flex gap-4">
             <FaTv className="inline size-15 px-2 py3 text-red-600 bg-neutral-800 border-2  border-neutral-700 rounded-lg" />
             <Text title="Smart TV" />
@@ -48,7 +50,7 @@ const Experiences = () => {
             Download our app from the Google Play Store or the Apple App Store
           </p>
         </Card>
-        <Card className="bg-linear-to-tr from-neutral-950/100 via-neutral-950 to-red-900/55 p-7">
+        <Card className="bg-linear-to-tr from-neutral-950/100 via-neutral-950 to-red-900/15 px-5 py-7 md:px-10 md:py-15">
           <div className="flex gap-4">
             <BsFillLaptopFill className="inline size-15 px-2 py3 text-red-600 bg-neutral-800 border-2  border-neutral-700 rounded-lg" />
             <Text title="Laptops" />
@@ -58,7 +60,7 @@ const Experiences = () => {
             Download our app from the Google Play Store or the Apple App Store
           </p>
         </Card>
-        <Card className="bg-linear-to-tr from-neutral-950/100 via-neutral-950 to-red-900/55 p-7">
+        <Card className="bg-linear-to-tr from-neutral-950/100 via-neutral-950 to-red-900/15 px-5 py-7 md:px-10 md:py-15">
           <div className="flex gap-4">
             <FaGamepad className="inline size-15 px-2 py3 text-red-600 bg-neutral-800 border-2  border-neutral-700 rounded-lg" />
             <Text title="Gaming Consoles" />
@@ -68,7 +70,7 @@ const Experiences = () => {
             Download our app from the Google Play Store or the Apple App Store
           </p>
         </Card>
-        <Card className="bg-linear-to-tr from-neutral-950/100 via-neutral-950 to-red-900/55 p-7">
+        <Card className="bg-linear-to-tr from-neutral-950/100 via-neutral-950 to-red-900/15 px-5 py-7 md:px-10 md:py-15">
           <div className="flex gap-4">
             <BsHeadsetVr className="inline size-15 px-2 py3 text-red-600 bg-neutral-800 border-2  border-neutral-700 rounded-lg" />
             <Text title="VR Headsets" />

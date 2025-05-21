@@ -6,7 +6,7 @@ import MyButton from "../global/MyButton";
 import { FaPlay } from "react-icons/fa6";
 import EmptyDiv from "../global/EmptyDiv";
 
-const Hero = () => {
+const Hero = ({ handleClick }) => {
   return (
     <div
       style={{ backgroundImage: `url(${HeroBg})` }}
@@ -14,12 +14,14 @@ const Hero = () => {
     >
       <div className="bg-gradient-to-b from-[#0f0f0f]/0 to-[#0f0f0f]/100 h-[50vh] w-full absolute bottom-0 left-0 z-0"></div>
       <div className="relative z-10 ">
-        <NavBar />
+        <NavBar handleClick={handleClick} />
         <EmptyDiv />
         <Text
           title="The Best Streaming Experience"
           textTitle="Stremvibe is the best streaming experience for watching your favourite moviesand shows on demand, anytime."
           textAlign="text-center"
+          bgTextTitle="StreamVibe is the best streaming experience for watching your favorite movies and shows on demand, anytime, anywhere. With StreamVibe, you can enjoy a wide variety of content, including the latest blockbusters, classic movies, popular TV shows, and more. You can also create your own watchlists, so you can easily find the content you want to watch."
+          classname="md:w-[77%] md:m-auto"
         />
         <MyButton classname="m-auto bg-red-600 my-3 px-5 py-3 w-52">
           <FaPlay className="inline mr-2" />
