@@ -37,7 +37,7 @@ const HomePage = () => {
     setShowSide(!showSide);
   }
   return (
-    <div className="bg-[#0f0f0f] relative">
+    <div className={`bg-[#0f0f0f] relative overflow-hidden`}>
       <Hero handleClick={handleClick} />
       <SideBar showSide={showSide} removeSide={removeSide} />
       {category && categoryImg && (

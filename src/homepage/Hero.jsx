@@ -3,7 +3,7 @@ import NavBar from "../global/NavBar";
 import HeroBg from "../images/hero-720b4fae.png";
 import Text from "../global/Text";
 import MyButton from "../global/MyButton";
-import { FaPlay } from "react-icons/fa6";
+import Play from "../global/Play";
 import EmptyDiv from "../global/EmptyDiv";
 
 const Hero = ({ handleClick }) => {
@@ -24,7 +24,7 @@ const Hero = ({ handleClick }) => {
           classname="md:w-[77%] md:m-auto"
         />
         <MyButton classname="m-auto bg-red-600 my-3 px-5 py-3 w-52">
-          <FaPlay className="inline mr-2" />
+          <Play />
           Start Watching Now
         </MyButton>
       </div>

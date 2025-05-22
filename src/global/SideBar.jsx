@@ -5,7 +5,7 @@ const SideBar = ({ showSide, removeSide }) => {
   return (
     <>
       {showSide && (
-        <div className="absolute h-screen w-screen top-0 left-0 bg-neutral-950 z-50 px-5 py-10 flex flex-col gap-7">
+        <div className="fixed w-screen top-0 bottom-0 left-0 bg-neutral-950 z-50 px-5 py-10 flex flex-col gap-7">
           <div>
             <TbX
               onClick={() => removeSide()}
