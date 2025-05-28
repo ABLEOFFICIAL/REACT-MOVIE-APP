@@ -1,5 +1,7 @@
 import React, { useEffect, useState } from "react";
 import Suggest from "./Suggest";
+import MovieShow from "./MovieShow";
+import Explore from "../homepage/Explore";
 
 const MoviePage = () => {
   const [suggestedMovies, setSuggestedMovies] = useState();
@@ -12,9 +14,10 @@ const MoviePage = () => {
       .then((data) => setSuggestedMovies(data.results));
   });
   return (
-    <div className={`bg-[#0f0f0f] overflow-x-hidden`}>
+    <div className={`bg-[#0f0f0f] px-5`}>
       {suggestedMovies && <Suggest suggestedMovies={suggestedMovies} />}
-      <h1>hvhsvj</h1>
+      <MovieShow />
+      <Explore />
     </div>
   );
 };
